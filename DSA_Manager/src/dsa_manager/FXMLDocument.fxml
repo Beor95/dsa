@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="640.0" maxWidth="900.0" minHeight="640.0" minWidth="900.0" prefHeight="640.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsa_manager.FXMLDocumentController">
+   <top>
+      <VBox prefHeight="72.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Account">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Bearbeiten">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Ansicht">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Session">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Hilfe">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+                
+              </menus>
+            </MenuBar>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="LeP:">
+                     <HBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField maxWidth="40.0">
+                     <HBox.margin>
+                        <Insets bottom="8.0" right="8.0" top="8.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="AsP:">
+                     <HBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField maxWidth="40.0">
+                     <HBox.margin>
+                        <Insets bottom="8.0" right="8.0" top="8.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="KaP:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField maxWidth="40.0">
+                     <HBox.margin>
+                        <Insets bottom="8.0" right="8.0" top="8.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Schips:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField maxWidth="40.0">
+                     <HBox.margin>
+                        <Insets bottom="8.0" right="8.0" top="8.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="buttonProbe" maxWidth="60.0" mnemonicParsing="false" onAction="#handleProbeButton" prefHeight="26.0" prefWidth="71.0" text="Proben" HBox.hgrow="NEVER">
+                     <HBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <right>
+      <VBox prefHeight="568.0" prefWidth="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: red;">
+               <children>
+                  <TextField layoutX="10.0" layoutY="22.0" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" AnchorPane.bottomAnchor="2.8" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="22.0" />
+                  <Text layoutX="16.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MU" AnchorPane.bottomAnchor="28.4" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="15.380468749999999" AnchorPane.topAnchor="5.0" />
+               </children></AnchorPane>
+            <AnchorPane prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: violet;">
+               <children>
+                  <TextField layoutX="9.0" layoutY="21.0" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" AnchorPane.bottomAnchor="2.8" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="22.0" />
+                  <Text layoutX="18.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KL" AnchorPane.bottomAnchor="28.4" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="19.790625" AnchorPane.topAnchor="5.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: green;">
+               <children>
+                  <TextField layoutX="6.0" layoutY="24.0" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" AnchorPane.bottomAnchor="2.8" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="22.0" />
+                  <Text layoutX="19.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IN" AnchorPane.bottomAnchor="28.4" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.230078125" AnchorPane.topAnchor="5.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: black;">
+               <children>
+                  <TextField layoutX="14.0" layoutY="25.0" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" AnchorPane.bottomAnchor="2.8" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="22.0" />
+                  <Text fill="WHITE" layoutX="18.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CH" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: yellow;">
+               <children>
+                  <TextField layoutX="7.0" layoutY="28.0" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" AnchorPane.bottomAnchor="2.8" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="22.0" />
+                  <Text layoutX="20.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FF" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: blue;">
+               <children>
+                  <TextField layoutX="14.0" layoutY="26.0" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" AnchorPane.bottomAnchor="2.8000000000000007" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="22.0" />
+                  <Text layoutX="17.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField layoutX="10.0" layoutY="25.0" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" AnchorPane.bottomAnchor="2.8000000000000007" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="22.0" />
+                  <Text layoutX="17.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KO" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange;">
+               <children>
+                  <TextField layoutX="12.0" layoutY="29.0" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" AnchorPane.bottomAnchor="2.8000000000000007" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="22.0" />
+                  <Text layoutX="18.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KK" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Helden">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+          <Tab text="Kampf">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>
