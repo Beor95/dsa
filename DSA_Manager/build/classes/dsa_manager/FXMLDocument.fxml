@@ -11,11 +11,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="640.0" maxWidth="900.0" minHeight="640.0" minWidth="900.0" prefHeight="640.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsa_manager.FXMLDocumentController">
+<BorderPane maxHeight="800.0" maxWidth="1280.0" minHeight="800.0" minWidth="1280.0" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsa_manager.FXMLDocumentController">
    <top>
       <VBox prefHeight="72.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -103,7 +104,8 @@
                         <Insets bottom="8.0" right="8.0" top="8.0" />
                      </HBox.margin>
                   </TextField>
-                  <Button fx:id="buttonProbe" maxWidth="60.0" mnemonicParsing="false" onAction="#handleProbeButton" prefHeight="26.0" prefWidth="71.0" text="Proben" HBox.hgrow="NEVER">
+                  <Pane prefHeight="47.0" prefWidth="185.0" />
+                  <Button fx:id="buttonProbe" maxWidth="112.0" mnemonicParsing="false" onAction="#handleProbeButton" prefHeight="26.0" prefWidth="112.0" text="Proben">
                      <HBox.margin>
                         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                      </HBox.margin>
@@ -114,7 +116,7 @@
       </VBox>
    </top>
    <right>
-      <VBox prefHeight="568.0" prefWidth="50.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="728.0" prefWidth="50.0" BorderPane.alignment="CENTER">
          <children>
             <AnchorPane prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: red;">
                <children>
@@ -151,7 +153,7 @@
                   <Text layoutX="17.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GE" />
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: rwhiteed;">
+            <AnchorPane prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: white;">
                <children>
                   <TextField layoutX="10.0" layoutY="25.0" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" AnchorPane.bottomAnchor="2.8000000000000007" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="22.0" />
                   <Text layoutX="17.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KO" />
@@ -170,9 +172,72 @@
       <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
         <tabs>
           <Tab text="Helden">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
+               <content>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <left>
+                        <VBox prefHeight="698.0" prefWidth="169.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="207.0" text="Neuen Helden erschaffen">
+                                 <VBox.margin>
+                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </left>
+                     <center>
+                        <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+                          <tabs>
+                            <Tab text="Allgemein">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              </content>
+                            </Tab>
+                            <Tab text="Talente">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              </content>
+                            </Tab>
+                              <Tab text="Kampf">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                              </Tab>
+                              <Tab text="Ausrüstung">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                              </Tab>
+                              <Tab text="Zauber und Rituale">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                              </Tab>
+                              <Tab text="Liturgien und Zeremonien">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                              </Tab>
+                              <Tab text="Vor- und Nachteile">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                              </Tab>
+                              <Tab text="Sonderfertigkeiten">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                              </Tab>
+                              <Tab text="Über den Helden">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </center>
+                  </BorderPane>
+               </content>
           </Tab>
           <Tab text="Kampf">
             <content>
