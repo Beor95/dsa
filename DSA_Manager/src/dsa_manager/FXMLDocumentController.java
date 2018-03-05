@@ -20,8 +20,7 @@ import javafx.scene.control.Label;
 public class FXMLDocumentController implements Initializable {
     
     @FXML
-    private Label label;
-    private Button button;
+    private Button buttonProbe;
     
 //    @FXML
 //    private void handleButtonAction(ActionEvent event) {
@@ -31,7 +30,8 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private void handleProbeButton(ActionEvent event){
-        System.out.println("Penis");
+        System.out.println("Lustig");
+        
     }
     
     @Override
